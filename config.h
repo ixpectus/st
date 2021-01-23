@@ -5,8 +5,18 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Meslo LG S DZ:style=Regular:pixelsize=14:antialias=true:autohint=true";
+static char *font = "MesloLGS Nerd Font:style=Regular:pixelsize=14:antialias=true:autohint=true";
+/* Spare fonts */
+static char *font2[] = {
+	"EmojiOne:style=Regular:pixelsize=10:antialias=true:autohint=true",
+};
+/* static char *font = "JetBrainsMono Nerd Font:style=Regular:pixelsize=15:antialias=true:autohint=true"; */
+
 static int borderpx = 2;
+
+static char *openurlcmd[] = { "/bin/sh", "-c",
+	"xurls | dmenu -l 10 -w $WINDOWID | xargs -r open",
+	"externalpipe", NULL };
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -214,7 +224,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ ControlMask,          XK_v,           normalMode,     {.i =  0} },
+ 	{ MODKEY,               XK_c,           normalMode,     {.i =  0} },
+	{ TERMMOD, XK_U, externalpipe, { .v = openurlcmd } },
 };
 
 /*
