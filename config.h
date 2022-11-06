@@ -476,6 +476,7 @@ static Key key[] = {
 	{ XK_F33,           XK_NO_MOD,      "\033[20;5~",    0,    0},
 	{ XK_F34,           XK_NO_MOD,      "\033[21;5~",    0,    0},
 	{ XK_F35,           XK_NO_MOD,      "\033[23;5~",    0,    0},
+  { XK_Tab,           ControlMask,    "\033[9;5u",     0,    0},
 };
 
 /*
