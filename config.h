@@ -253,7 +253,18 @@ static Shortcut shortcuts[] = {
  * If you want keys other than the X11 function keys (0xFD00 - 0xFFFF)
  * to be mapped below, add them to this array.
  */
-static KeySym mappedkeys[] = { -1 };
+static KeySym mappedkeys[] = { 
+  -1, 
+  XK_1, 
+  XK_2, 
+  XK_3, 
+  XK_4, 
+  XK_5, 
+  XK_6, 
+  XK_7, 
+  XK_8, 
+  XK_9 
+};
 
 /*
  * State bits to ignore when matching key or button events.  By default,
@@ -477,6 +488,24 @@ static Key key[] = {
 	{ XK_F34,           XK_NO_MOD,      "\033[21;5~",    0,    0},
 	{ XK_F35,           XK_NO_MOD,      "\033[23;5~",    0,    0},
   { XK_Tab,           ControlMask,    "\033[9;5u",     0,    0},
+ 	{ XK_1,            ControlMask,                    "\033[49;5u",  0,  0},
+ 	{ XK_1,            Mod1Mask|ControlMask,           "\033[49;7u",  0,  0},
+ 	{ XK_2,            ControlMask,                    "\033[50;5u",  0,  0},
+ 	{ XK_2,            Mod1Mask|ControlMask,           "\033[50;7u",  0,  0},
+ 	{ XK_3,            ControlMask,                    "\033[51;5u",  0,  0},
+ 	{ XK_3,            Mod1Mask|ControlMask,           "\033[51;7u",  0,  0},
+ 	{ XK_4,            ControlMask,                    "\033[52;5u",  0,  0},
+ 	{ XK_4,            Mod1Mask|ControlMask,           "\033[52;7u",  0,  0},
+ 	{ XK_5,            ControlMask,                    "\033[53;5u",  0,  0},
+ 	{ XK_5,            Mod1Mask|ControlMask,           "\033[53;7u",  0,  0},
+ 	{ XK_6,            ControlMask,                    "\033[54;5u",  0,  0},
+ 	{ XK_6,            Mod1Mask|ControlMask,           "\033[54;7u",  0,  0},
+ 	{ XK_7,            ControlMask,                    "\033[55;5u",  0,  0},
+ 	{ XK_7,            Mod1Mask|ControlMask,           "\033[55;7u",  0,  0},
+ 	{ XK_8,            ControlMask,                    "\033[56;5u",  0,  0},
+ 	{ XK_8,            Mod1Mask|ControlMask,           "\033[56;7u",  0,  0},
+ 	{ XK_9,            ControlMask,                    "\033[57;5u",  0,  0},
+ 	{ XK_9,            Mod1Mask|ControlMask,           "\033[57;7u",  0,  0},
 };
 
 /*
