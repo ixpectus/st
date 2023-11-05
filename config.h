@@ -11,12 +11,18 @@
 /* 	"EmojiOne:style=Regular:pixelsize=18:antialias=true:autohint=true", */
 /* }; */
 
-static char *font = "MesloLGS Nerd Font:style=Regular:pixelsize=33:antialias=true:autohint=true";
+// static char *font = "MesloLGS Nerd Font:style=Regular:pixelsize=18:antialias=true:autohint=true";
+// /* Spare fonts */
+// static char *font2[] = {
+// 	"EmojiOne:style=Regular:pixelsize=18:antialias=true:autohint=true",
+// };
+/* static char *font = "JetBrainsMono Nerd Font:style=Regular:pixelsize=15:antialias=true:autohint=true"; */
+
+static char *font = "MesloLGS Nerd Font:style=Regular:pixelsize=35:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-	"EmojiOne:style=Regular:pixelsize=33:antialias=true:autohint=true",
+	"EmojiOne:style=Regular:pixelsize=35:antialias=true:autohint=true",
 };
-/* static char *font = "JetBrainsMono Nerd Font:style=Regular:pixelsize=15:antialias=true:autohint=true"; */
 
 static int borderpx = 2;
 
